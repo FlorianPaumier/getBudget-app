@@ -5,7 +5,7 @@ import swal from "sweetalert";
 
 //Import Container
 import LoginContainer from "../Login/LoginContainer";
-import SignInContainer from "../SignIn/SignInContainer";
+import SignUpContainer from "../SignUp/SignUpContainer";
 import ProfileContainer from "../Profile/ProfileContainer";
 import HomeContainer from "../Home/HomeContainer";
 
@@ -100,7 +100,7 @@ class App extends Component {
                         <Route exact path={"/"} component={HomeContainer} />
                         <Route exact path={"/profile"} component={ProfileContainer}/>
                         <Route exact path={"/contact"} component={ContactContainer}/>
-                        <Route exact path={"/signin"} component={SignInContainer}/>
+                        <Route exact path={"/signin"} component={SignUpContainer}/>
                     </React.Fragment>
                     <LoginContainer login={this.loginRef} close={this.closeLogin}/>
             </div>
