@@ -1,0 +1,58 @@
+@import "../../Styles/variables";
+
+.App {
+  &__header {
+    background-color: #282c34;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+    &-brand{
+      width: 20vw;
+    }
+
+    &-nav {
+      display: inherit;
+      justify-content: space-between;
+      width: 80vw;
+
+      button {
+        background-color: transparent;
+        color: $color-grey-light;
+        border-left: 2px solid $color-blue-light;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+        width: 16vw;
+        height: 7vh;
+      }
+
+      button:focus{
+        outline:none;
+      }
+
+    }
+
+
+  }
+  &__body{
+    min-height: 83vh;
+  }
+  &__footer{
+    background-color: #282c34;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+    i{
+      color: $color-grey-light;
+    }
+  }
+}
