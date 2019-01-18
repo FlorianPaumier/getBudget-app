@@ -23,7 +23,7 @@
         background-color: transparent;
         color: $color-grey-light;
         border-left: 2px solid $color-blue-light;
-        border-right: none;
+        border-right: 2px solid $color-blue-light;
         border-top: none;
         border-bottom: none;
         width: 16vw;
@@ -35,9 +35,8 @@
       }
 
     }
-
-
   }
+
   &__body{
     min-height: 83vh;
   }
@@ -52,6 +51,7 @@
     color: white;
 
     i{
+      margin: 0 0 0 10px;
       color: $color-grey-light;
     }
   }
